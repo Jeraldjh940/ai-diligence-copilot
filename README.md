@@ -1,10 +1,10 @@
-# ⚖️ Local AI Document & Legal Diligence Copilot (RAG Pipeline)
+## Local AI Document & Legal Diligence Copilot (RAG Pipeline)
 
-An air-gapped, privacy-first Retrieval-Augmented Generation (RAG) assistant running 100% locally on personal hardware. Designed for high-stakes document intelligence, contract analysis, and resume parsing with zero data leakage.
+It is a private AI assistant that runs completely offline on your own computer to read, analyze, and answer questions about your sensitive documents without your data ever touching the internet.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 - **Zero Cloud Leakage:** Fully local inference using Ollama (`llama3.1:8b`) and local vector embeddings (`nomic-embed-text`).
 - **Sub-Second Semantic Retrieval:** Powered by an embedded ChromaDB vector store.
 - **Dynamic PDF Ingestion:** Upload any multi-page PDF via the UI; the pipeline extracts text, chunks it, and builds vector indices in real-time.
@@ -13,7 +13,7 @@ An air-gapped, privacy-first Retrieval-Augmented Generation (RAG) assistant runn
 
 ---
 
-## 🛠️ Architecture
+## Architecture
 
 ```
 [ User PDF Upload / Query ]
@@ -39,7 +39,7 @@ An air-gapped, privacy-first Retrieval-Augmented Generation (RAG) assistant runn
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 - **LLM Engine:** Ollama (`llama3.1:8b`)
 - **Embedding Model:** `nomic-embed-text` (768 dimensions)
 - **Vector Database:** ChromaDB
@@ -49,7 +49,7 @@ An air-gapped, privacy-first Retrieval-Augmented Generation (RAG) assistant runn
 
 ---
 
-## ⚡ Quickstart Setup
+##  Quickstart Setup
 
 ### 1. Prerequisites
 Install Ollama and pull the required models:
@@ -61,7 +61,7 @@ ollama pull nomic-embed-text
 ### 2. Setup Virtual Environment
 ```bash
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate.ps1
 pip install chainlit chromadb ollama pypdf
 ```
 
@@ -69,4 +69,4 @@ pip install chainlit chromadb ollama pypdf
 ```bash
 chainlit run app.py -w
 ```
-Open `http://localhost:8000` in your browser.
+Open `http://localhost:8000` in your browser.     
