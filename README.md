@@ -69,4 +69,13 @@ pip install chainlit chromadb ollama pypdf
 ```bash
 chainlit run app.py -w
 ```
-Open `http://localhost:8000` in your browser.     
+Open `http://localhost:8000` in your browser.    
+
+
+---
+
+## System Requirements & Limitations
+- **Hardware:** Recommended minimum 16 GB RAM (or 8 GB VRAM) for low-latency local inference with `llama3.1:8b`.
+- **Supported Documents:** Optimized for text-based PDFs. Scanned documents requiring OCR (e.g., Tesseract) are not currently supported.
+- **Privacy & Telemetry:** 100% offline execution. No telemetry, third-party API calls, or external network requests.
+
