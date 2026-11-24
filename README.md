@@ -62,7 +62,7 @@ ollama pull nomic-embed-text
 ```bash
 python -m venv venv
 venv\Scripts\activate.ps1
-pip install chainlit chromadb ollama pypdf
+pip install -r requirements.txt
 ```
 
 ### 3. Run the Copilot
